@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather | Welcome</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
+    <meta name="theme-color" content="#0e3979">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="Bokehlicia-Captiva-Cloud.ico" type="image/x-icon">
+<style>
+
+
+
+        .topnav {
+            overflow: hidden;
+            background-color:#0e3979;
+            position: fixed;
+            width:100%;
+            z-index: 10;
+            box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
+        }
+
+        .topnav .text_topnav{
+            font-size:25px;
+            font-weight: 600;
+            padding:0px;
+            margin:0px;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+
+            display: block;
+        }
+
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+
+
+
+
+.bar1, .bar2, .bar3 {
+  width: 32px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+.collapsible {
+  background-color:#fff ;
+  color: #0e3979;
+  cursor: pointer;
+  padding: 10px;
+  width: 40%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  float:right;
+
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #0e3979;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  display: block;
+  width:100%
+
+}
+</style>
+
+
+</head>
+
+<body style="z-index: -1">
+
+    <!--<iframe height="100%" width="100%"src="popup/index.html" frameborder="0"></iframe> -->
+
+<div class="">
+
+    <div class="topnav"  style="   background-color:#0e3979;">
+      <span class="text_topnav" >  <a class="act"> Weather</a> </span>
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+    </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><div class="container" onclick="myFunction1(this)">
+                        <div class="bar1" style="margin-top:0px"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div></a>
+    </div>
+
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<!--    <header>
+        <div class="container">
+            <div class="branding">
+                <h2> Weather</h2>
+                <span style="font-size:30px;cursor:pointer; float:Right; display:inline; padding-top:0px"
+                    onclick="openNav()"></span>
+
+
+
+
+                <nav style="font-family: cursive">
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header> -->
+<script>
+    function myFunction1(x) {
+        x.classList.toggle("change");
+    }
+</script>
+    <section id="showcase">
+        <div class="container">
+            <h2>
+                <strong>EARLY WARNING SYSTEMS FOR FLOOD OCCURENCES IN THE OGUN &ndash; OSUN RIVER BASIN, SOUTH WEST
+                    NIGERIA</strong>
+            </h2>
+
+        </div>
+    </section>
+    <div class="container"
+        style="background-color:#0e3979 ; opacity: 0.8; margin:0px; width:auto; padding: 10px; color:#fff">
+        <center>
+            <h2>Subscribe to the news newsletter</h2>
+
+            <form class="" action="index.html" method="post">
+                <input type="email" name="" value="" placeholder="Enter Your E-mail">
+                <button class="button_1" style="background-color: #0e3979; border:1px solid #fff" type="button"
+                    name="button"><b>S</b>ubscribe</button>
+            </form>
+            <br>
+        </center>
+    </div>
+    <br>
+
+
+    <!-- <section id="newsletter">
+        <div class="container">
+        <center>   <h1>Subscribe to our news newsletter</h1> </center>
+            <form class="" action="index.html" method="post">
+                <input type="email" name="" value="" placeholder="Enter Your E-mail">
+                <button class="button_1" type="button" name="button"><b>S</b>ubscribe</button>
+            </form>
+        </div>
+    </section>
+-->
+
+    <div class="container-text">
+        <br><br>
+        <center>
+            <h3>
+                EARLY WARNING SYSTEMS FOR FLOOD OCCURENCES IN THE OGUN &ndash; OSUN RIVER BASIN, SOUTH WEST
+                NIGERIA
+            </h3>
+        </center>
+
+        <br><br>
+
+        <img src="image1.png" width="100%" t="">
+        <center>
+            <p>Figure 1: Illustration of WRF-Hydro model system</p>
+        </center>
+
+
+        <p>When run in an offline or &lsquo;uncoupled&rsquo; mode, WRF-Hydro must read in the meteorological forcing
+            data
+            necessary to perform land surface model calculations and it contains the necessary routines to do this.
+            <br><br> When run
+            in
+            a coupled mode with WRF or another larger architecture, WRF-Hydro receives meteorological forcing or land
+            surface
+            states and fluxes from the parent architecture. The basic execution process is as follows:</p>
+        <ol>
+            <li>Upon initialization static land surface physiographic data are read into the WRF-Hydro system and the
+                model
+                domain and computational arrays are established.</li> <br>
+            <li>Depending on whether or not WRF-Hydro is run offline as a stand-alone system or whether it is coupled
+                into
+                another architecture, either forcing data is read in or land surface states and fluxes are passed in.
+            </li><br>
+            <li>For offline simulations which require land model execution, the 1-D, gridded land surface model is
+                executed.
+            </li><br>
+            <li>Land surface states and fluxes are then disaggregated to the high resolution terrain routing grids if
+                routing is
+                activated and there is a difference between the land model grid and the routing grid.</li><br>
+            <li>If activated, sub-surface routing physics are executed.</li><br>
+            <li>If activated, surface routing physics are executed.</li><br>
+            <li>If activated, the conceptual base flow model is executed.</li><br>
+            <li>If activated, channel and reservoir routing components are executed.</li> <br>
+            <li>Updated land surface states and fluxes are then aggregated from the high resolution terrain routing grid
+                to
+                the
+                land surface model grid.</li> <br>
+            <li>Results from these integrations are then written to the model output files and restart files or, in the
+                case
+                of
+                a coupled WRF/WRF-Hydro simulation, passed back to the WRF model.</li><br>
+        </ol>
+
+
+
+        <p>&nbsp;</p>
+
+    </div>
+    <div class="container-text">
+
+        <div class="text-box"
+            style="padding:10px;background-color: #0e3979;color:#fff; clip-path:polygon(0 0, 100% 0%, 100% 97%, 0% 100%)">
+
+            <h2>
+                <ol>
+                    <li><strong>Computer requirements</strong></li>
+                </ol>
+            </h2>
+            <p>The WRF-Hydro has been developed on a LINUX-based computing platform using Portland Group, gfort and
+                ifort
+                FORTRAN90
+                compilers. To date the model has been ported to the U.S. National Science Foundation IBM supercomputer
+                &lsquo;yellowsone&rsquo; located at NCAR, the University of Texas/NSF XSEDE &lsquo;stampede&rsquo;
+                supercomputer,
+                numerous Linux desktop machines and Linux cluster machines and to the MAC/OS operating system using
+                above three
+                compilers.
+
+            </p>
+            <button class="collapsible">More</button>
+            <div class="content">
+                <p>It has not been rigorously tested on other platforms. When run in full hydrologic simulation mode, with all attendant process modules activated (e.g. overland and subsurface routing, channel and reservoir routing, and baseflow) the WRF-Hydro is a moderately computationally intensive modeling system with respect to other physics-based environmental modeling systems (e.g. weather models, climate models, catchment hydrology models and other geophysical fluid dynamics models). <br><br> However, computational requirements scale exponentially as functions of domain size and spatial resolution. Thus there are no firm rules on minimum computational requirements in terms of processor speed or memory allocation. Indeed it is possible and relatively straightforward to set up and execute simple runs over small basins using a single processor machine with a few hundred megabytes of disk space. <br><br> However, the WRF-Hydro system was designed for large domain, high-resolution applications which require significant computational, memory and disk storage resources. With these applications in mind, the WRF-Hydro has been fully parallelized to run on high performance computing systems</p>
+            </div>
+
+        <br><br>
+            <br>
+        </div>
+
+        <br><br>
+
+        <div class="text-box"
+            style="padding:10px;background-color: #0e3979;color:#fff; clip-path:polygon(0 2%, 100% 0%, 100% 97%, 0% 100%)">
+
+            <br>
+            <h2>
+                <ol start="2">
+                    <li><strong>Data requirement</strong></li>
+                </ol>
+            </h2>
+            <p>Either of GFS or ERA-interim will be used as initial gridded data</p>
+            <p>Input files needed:</p>
+            <p>Standard WRF-Noah/NoahMP LSM grids (geogrid.exe))</p>
+            <p>&nbsp;&lsquo;wrfinput&rsquo; file for initial conditions (real.exe or utility script)</p>
+            <p>One new netcdf file containing high resolution gridded routing information (&lsquo;routing grid&rsquo;)
+                &ndash;Topography, flow direction, channel network, observation points, watersheds, stream order,
+                calibration
+                parameters.</p>
+
+
+            <button class="collapsible">More</button>
+            <div class="content">
+                <p><p>A new ASCII parameter tables depending on activated options (e.g. lake model, baseflow model, reach routing model) </p> <p>Geogrid/LSM grid: a) LSM/geogrid data: Using WPS &amp;/or Domain Wizard</p> <p><strong><em>Fields used by WRF-Hydro</em></strong>:</p> <p>Soil type, vegetation type, lake mask, green vegetation fraction/LAI, lat/lon, lower soil temperature</p> <p>Routing Grid: a) High-resolution terrain routing grids: These data are on a fine-resolution terrain grid </p> <p>&nbsp;</p> <p>Forcing Inputs: &bull; Temperature (deg K), humidity-mixing ratio (kg/kg), short &amp; longwave radiation (W/m^2), pressure (Pa), wind speed (m/s) and precipitation rate (mm/s) &bull; Optional formats of forcing data: &ndash; Fully-coupled model &ndash; Existing wrf output files &ndash; Unified analysis (all met. variables together &ndash; Netcdf file, e.g. NLDAS-hourly) &ndash; Specified precipitation (Netcdf file , precipitation comes from alternate source, e.g. radar, satellite, gauge analysis) ALL FORCING DATA IS MAPPED TO SAME GRID (based on WRF &lsquo;geogrid&rsquo;) SPECIFIED PRECIPITATION MAY HAVE HIGHER TIME RESOLUTION (e.g. 5min)</p> <p>Data Pre-processing Options: &ndash; Several utilities for formatting and creating &lsquo;forcing&rsquo; data: </p> <ul> <li>Using netcdf as the underlying data model</li> <li>One file per forcing input time</li> <li>Direct use or simple regrid of existing wrf output</li> <li>ESMF/ncl scripts for conservative re-gridding of data between structured or unstructured grids, ASCII- netcdf formats, etc.</li> <li>NCO-based shell scripts to change variable names, threshold units, re-order grids, etc</li> <li>HRLDAS tools for preparing forcing with topographic adjustment</li> </ul></p>
+            </div>
+            <br><br><br>
+        </div>
+
+
+        <br><br>
+
+        <div class="text-box"
+            style="   padding:10px;background-color: #0e3979;color:#fff; clip-path:polygon(0 4%, 100% 0%, 100% 100%, 0% 100%)">
+
+            <p>&nbsp;</p>
+            <h2>
+                <ol start="3">
+                    <li><strong>Model setup</strong></li>
+                </ol>
+            </h2>
+            <p>The WRF-Hydro would be run as a fully coupled model to predict and forecast some hydrological processes such as surface runoff, channel flow, lake/reservoir flow, sub-surface flow and land-atmosphere exchanges. The potential skill of the model to forecast flood would be examined based on precipitation inputs derived from the Weather Research and Forecasting (WRF) model. The Global Forecasting System (GFS) products would be used as initial input to drive the WRF model. Although, precipitation from models could possess some systematic errors that are associated to initial conditions and physical parametization but a sensitivity study would be carried out to calibrate the model so as to reduce the effect of such error.
+            </p>
+            <button class="collapsible">More</button>
+            <div class="content">
+                <p>4.1 Numerical configuration</p>
+                <p>The National Center for Atmospheric Research (NCAR) Weather Research and Forecasting (WRF) model version 3.9 would be used as a common framework to host the different model physics combinations. The WRF model consist of different model physics such as microphysics (MP), cumulus parameterization (CU), planetary boundary layer (PBL), surface layer (SL), land surface (LS), and shortwave and longwave radiation (RAD). Each of these physics has different parameterization schemes that describe the various complex sub-grid scale processes that cannot be represented by the model resolution. Some schemes would be selected from MP, CU and PBL physics. Comprehensive descriptions of the schemes can be found in Skamarock <em>et al.</em> (2008). The choice of selection is due to the fact that the physics schemes are not only linked with moisture transport and redistribution in the atmosphere but they also use different approach to represent a specific processes in the atmosphere (Klein <em>et al.</em>, 2015). Appropriate parent domain covering large region of Nigeria at 15km resolution would be used to host a nested domains. The nested domain will focus on Ogun/Osun catchment area at 4km horizontal resolution.</p>
+            </div>
+            <br><br>
+        </div>
+
+        <br><br><br>
+        <img src="images/image2.jpg" width="100%" t="">
+
+        <p>Figure 2: Map of Nigeria showing the different River Basin development authorities</p>
+        <p>&nbsp;</p>
+
+
+
+        <p>The combination of CU, MP and PBL physics, which represents the effect of latent heat release through deep and shallow convection, microphysical cloud and precipitation processes, and vertical turbulent mixing due to eddy transport, respectively, would be the major consideration in the research framework. <br> <br> This is due to the vital roles they play in precipitation activities within the atmospheric column. The flux profiles of temperature and moisture within the whole atmospheric column are determined by the PBL scheme. These outputs then serve as input for the CU and MP scheme at every model time step. The CU scheme is responsible for releasing instabilities in the atmospheric sounding, preventing the MP scheme from generating potentially unrealistic grid-scale convection. <br> <br> In order to redistribute temperature and moisture towards a stable profile, the CU scheme produces convective precipitation. Lastly, the MP scheme removes excess atmospheric moisture in case the air is still saturated, which we will refer to as non-convective precipitation.</p>
+
+
+    </div>
+
+    <!--
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="images/1.jpg" alt="">
+                <h3>HTML5 Markup</h3>
+                <p>GNS 101 is English for Academic Purposes (EAP)
+                    course; its purpose is to equip students with skills
+                    needed to learn and communicate in English.</p>
+            </div>
+            <div class="box">
+                <img src="images/2.jpg" alt="">
+                <h3>CSS 3</h3>
+                <p>GNS 101 is English for Academic Purposes (EAP)
+                    course; its purpose is to equip students with skills
+                    needed to learn and communicate in English.</p>
+            </div>
+            <div class="box">
+                <img src="images/4.jpg" alt="">
+                <h3>Graphic Design</h3>
+                <p>GNS 101 is English for Academic Purposes (EAP) course; its purpose is to equip students with skills
+                    needed to learn and communicate in English.</p>
+            </div>
+    </section>
+
+    -->
+
+
+
+
+
+
+
+    <!--
+        <h2>Read More Read Less Button</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+            lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
+                Maecenas
+                nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
+                sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+                ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                fermentum.
+                Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+-->
+
+
+<!--
+<p>Collapsible Set:</p>
+
+
+<button class="collapsible">Open Section 3</button>
+<div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    </p>
+</div>
+-->
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+
+
+    <iframe src="weather.html"
+        style="width:100%;height:60vh;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;"
+        marginheight="0" marginwidth="0"></iframe>
+
+
+    <footer>
+        <p>Weather, Copyright &Copy; 2018</p>
+
+    </footer>
+
+
+
+</body>
+
+</html>
