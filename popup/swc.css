@@ -5,7 +5,7 @@
   z-index:9000;
   background-color:#26262c;
   display:none;
-}  
+}
 #boxes .window {
   position:absolute;
   left:0;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 #boxes #dialog {
-  width:450px; 
+  width:450px;
   height:auto;
   padding: 10px 10px 10px 10px;
   background-color:#ffffff;

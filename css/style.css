@@ -1,116 +1,30 @@
- body {
-                display: block;
-            }
+* {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifl;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+            overflow-x: hidden
+        }
 
-            html {
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-                font-size: 15px;
-                line-height: 1.3;
-                overflow-x: hidden;
-            }
-
-            body {
-                font-family: 'Raleway', sans-serif;
-                font-size: 15px;
-                line-height: 1.5;
-                padding: 0px;
-                margin: 0px;
-            }
-
-            body {
-                background-color: rgb(46, 9, 211)55);
-                color: #333
-            }
-
-
-            input {
-                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      .container-1 {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+        }
 
 
 
-                width: 80%;
-                margin: 3px 0px;
-                padding: auto;
-                align-content: center;
-                height: 30px;
-                border: 1px solid #fff;
-                text-align: center;
-                border-radius: 5px;
+.wallpaper{
+    background-image: url(images/cogs4.jpg);
+    background-attachment: fixed;
+  /*clip-path:polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%); */
+  padding: 10px;
+}
 
-            }
+ 
 
-            button {
-                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-
-                width: 80%;
-                margin: 3px 0px;
-                padding: auto;
-                align-content: center;
-                border-radius: 5px;
-            }
-
-
-            /*text-align: center;*/
-
-            /*global*/
-            .container {
-                width: 70%;
-                margin: auto;
-                overflow: hidden;
-            }
-
-            .container-text {
-                width: 80%;
-                margin: auto;
-                overflow: hidden;
-            }
-
-            .text-box {
-                box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
-
-                background-color: #fff;
-                padding: 0px;
-                height: auto;
-                border-radius: 0.3em;
-
-            }
-
-             /*showcase*/
-
-            #showcase {
-                min-height: 420px;
-                /*background: url("images/cloud2.jpg") no-repeat 0 -800px;*/
-                background-image: url(images/cloud3.jpg);
-                background-position: fixed;
-                background-size: cover;
-                text-align: center;
-                color: #ffffff;
-                padding-top: 30vh;
-                display:none;
-            }
-
-            #showcase h1 {
-                margin-top: 100px;
-                font-size: 55px;
-                margin-bottom: 10px;
-            }
-
-            #showcase a {
-                color: #ffffff;
-                text-decoration: none
-            }
-
-            #showcase a:hover {
-                color: #e8491;
-                font-size: 56px;
-            }
-
-
-            footer {
-                padding: 3px;
-                margin-top: 0px;
-                color: #ffffff;
-                background: #0e3979;
-                text-align: center;
-            }
