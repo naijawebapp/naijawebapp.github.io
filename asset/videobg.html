@@ -66,7 +66,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: #1ebea5;
+            background: #4CAF50;
             z-index: 1;
             opacity: 0.75;
         }
@@ -99,7 +99,25 @@
             border-radius: 3px
         }
 
-
+.show{
+    background-image: url(images/banner\ 2.jpg);
+    
+    background-attachment: fixed;
+  /*clip-path:polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%); */
+  padding: 10px;
+  height:100vh;
+  background-repeat: no-repeat;
+ 
+    min-height: auto;
+    width: auto;
+    
+    text-align: center;
+    color: #ffffff;
+    background-size: cover;
+    background-attachment: local;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0%;
+}
 
     </style>
 
@@ -112,9 +130,11 @@
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
 
-            <video src="vid.mp4" type="video/mp4" autoplay muted loop id="myVideo">
+           <div class="show" >
 
-            </video>
+           </div>
+
+
         </div>
 
         <div class="header-overlay">
